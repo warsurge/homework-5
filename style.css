@@ -3,6 +3,18 @@ body {
     font-size: 16px;
     line-height: 1;
   }
+table{
+  border: 5px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%
+}
+
+td{
+  border:5px solid black;
+  height: 75px;
+  text-align: center;
+}
 
   textarea{
     background: transparent;
@@ -41,7 +53,7 @@ body {
     color: #000000;
     border-top: 1px dashed #000000;
   }
-  
+  /* color for the time of day */
   .past {
     background-color: #d3d3d3;
     color: white;
@@ -56,7 +68,7 @@ body {
     background-color: #77dd77;
     color: white;
   }
-  
+  /* save button */
   .saveBtn {
     border-left: 1px solid black;
     border-top-right-radius: 15px;

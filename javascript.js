@@ -1,6 +1,8 @@
+
+
 // THEN the current day is displayed at the top of the calendar
 
-const now = moment().format('MMMM Do YYYY');
+const now = moment().format('MMMM Do YYYY, h:mm:ss a');
 let $dateHeading = $('#currentDay');
   $dateHeading.text(now);
 
@@ -10,9 +12,9 @@ let $dateHeading = $('#currentDay');
 // WHEN I scroll down
 // THEN I am presented with timeblocks for standard business hours
 function timeBlocks(){
-    var hourBlock = $('<div class=')
-    var entryBlock
-    var saveBlock
+    // var time = $('<div class= "col-2 timeBlockTime hour"');
+    // var plans = $('<div class= "col-2 timeBlockPlans hour"');
+    // var save = $('<div class= "col-2 timeBlocksave hour"');
 }
 
 // WHEN I view the timeblocks for that day
