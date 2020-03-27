@@ -8,6 +8,19 @@ function startClockNow() {
 }
 $(startClockNow).text('#currentDay');
 
+$("#entry1").val(localStorage.getItem("entry1"))
+$("#entry2").val(localStorage.getItem("entry2"))
+$("#entry3").val(localStorage.getItem("entry3"))
+$("#entry4").val(localStorage.getItem("entry4"))
+$("#entry5").val(localStorage.getItem("entry5"))
+$("#entry6").val(localStorage.getItem("entry6"))
+$("#entry7").val(localStorage.getItem("entry7"))
+$("#entry8").val(localStorage.getItem("entry8"))
+$("#entry9").val(localStorage.getItem("entry9"))
+$("#entry10").val(localStorage.getItem("entry10"))
+$("#entry11").val(localStorage.getItem("entry11"))
+$("#entry12").val(localStorage.getItem("entry12"))
+$("#entry13").val(localStorage.getItem("entry13"))
 
 // WHEN I view the timeblocks for that day
 // THEN each timeblock is color coded to indicate whether it is in the past, present, or future
@@ -108,7 +121,7 @@ function checkUpdateColors() {
     if ((hourCompare == 18)) {
         $("#row11").addClass("present");
     }
-    else if ((hourCompare >= 118)) {
+    else if ((hourCompare >= 18)) {
         $("#row11").addClass("past");
     }
     else {
