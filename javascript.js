@@ -8,20 +8,6 @@ function startClockNow() {
 }
 $(startClockNow).text('#currentDay');
 
-$("#entry1").val(localStorage.getItem("entry1"))
-$("#entry2").val(localStorage.getItem("entry2"))
-$("#entry3").val(localStorage.getItem("entry3"))
-$("#entry4").val(localStorage.getItem("entry4"))
-$("#entry5").val(localStorage.getItem("entry5"))
-$("#entry6").val(localStorage.getItem("entry6"))
-$("#entry7").val(localStorage.getItem("entry7"))
-$("#entry8").val(localStorage.getItem("entry8"))
-$("#entry9").val(localStorage.getItem("entry9"))
-$("#entry10").val(localStorage.getItem("entry10"))
-$("#entry11").val(localStorage.getItem("entry11"))
-$("#entry12").val(localStorage.getItem("entry12"))
-$("#entry13").val(localStorage.getItem("entry13"))
-
 // WHEN I view the timeblocks for that day
 // THEN each timeblock is color coded to indicate whether it is in the past, present, or future
 function checkUpdateColors() {
@@ -152,14 +138,71 @@ checkUpdateColors();
 
 // WHEN I click into a timeblock
 // THEN I can enter an event
-
-// input box for event box
-
-// WHEN I click the save button for that timeblock
 // THEN the text for that event is saved in local storage
 
+    
+    
+      
+    function saveValue1(){
+        var dataToSave1 = document.getElementById("entry1","entry2").value;
+        localStorage.setItem("data1", dataToSave1); 
+    }
 
-// event listner(.on) save to local storage
+    // function saveValue2(){
+    //     var dataToSave2 = document.getElementById("entry2").value;
+    //     localStorage.setItem("data2", dataToSave2); 
+    // }
+        
+       
+        function getSavedValue1  (){
+            return localStorage.getItem("data1", "data2");
+            return localStorage.getItem("data2");
+        }
 
+        // function getSavedValue2  (){
+        //     return localStorage.getItem("data2");
+            
+        // }
+
+        document.getElementById("entry1").value = getSavedValue1("txt_1");    
+        console.log(document.getElementById("entry1"));
+        document.getElementById("entry2").value = getSavedValue1("txt_2");
+        console.log(document.getElementById("entry2"));
+        // document.getElementById("entry3").value = getSavedValue3("txt_3");
+        // document.getElementById("entry4").value = getSavedValue4("txt_4");
+        // document.getElementById("entry5").value = getSavedValue5("txt_5");
+        // document.getElementById("entry6").value = getSavedValue6("txt_6");
+        // document.getElementById("entry7").value = getSavedValue7("txt_7");
+        // document.getElementById("entry8").value = getSavedValue8("txt_8");
+        // document.getElementById("entry9").value = getSavedValue9("txt_9");
+        // document.getElementById("entry10").value = getSavedValue10("txt_10");
+        // document.getElementById("entry11").value = getSavedValue11("txt_11");
+        // document.getElementById("entry12").value = getSavedValue12("txt_12");
+        // document.getElementById("entry13").value = getSavedValue13("txt_13"); 
+ // var dataToSave3 = document.getElementById("entry3").value;
+        // var dataToSave4 = document.getElementById("entry4").value;
+        // var dataToSave5 = document.getElementById("entry5").value;
+        // var dataToSave6 = document.getElementById("entry6").value;
+        // var dataToSave7 = document.getElementById("entry7").value;
+        // var dataToSave8 = document.getElementById("entry8").value;
+        // var dataToSave9 = document.getElementById("entry9").value;
+        // var dataToSave10 = document.getElementById("entry10").value;
+        // var dataToSave11 = document.getElementById("entry11").value;
+        // var dataToSave12 = document.getElementById("entry12").value;
+        // var dataToSave13 = document.getElementById("entry13").value;
+        
+        
+         
+        // localStorage.setItem("data3", dataToSave3);
+        // localStorage.setItem("data4", dataToSave4);
+        // localStorage.setItem("data5", dataToSave5);
+        // localStorage.setItem("data6", dataToSave6);
+        // localStorage.setItem("data7", dataToSave7);
+        // localStorage.setItem("data8", dataToSave8);
+        // localStorage.setItem("data9", dataToSave9);
+        // localStorage.setItem("data10", dataToSave10);
+        // localStorage.setItem("data11", dataToSave11);
+        // localStorage.setItem("data12", dataToSave12);
+        // localStorage.setItem("data13", dataToSave13);
 // WHEN I refresh the page
 // THEN the saved events persist
